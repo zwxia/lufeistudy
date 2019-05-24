@@ -1,0 +1,9 @@
+f=open(file="readme.txt",mode="r",encoding="utf-8") #r如果编码和文件实际编码不一致，会报错
+data=f.read()
+print(data)
+f.close()
+
+fi=open(file="readme.txt",mode="r",encoding="utf-8")
+for i in fi:  #减小存储压力采用循环的方式每次读取文件的一行
+    print(i)
+f.close()
